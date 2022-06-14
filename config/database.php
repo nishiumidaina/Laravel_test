@@ -3,6 +3,8 @@
 use Illuminate\Support\Str;
 $db=parse_url(env('DATABASE_URL'));
 return [
+    'charset' => 'utf8',
+    'collation' => 'utf8_unicode_ci',
 
     /*
     |--------------------------------------------------------------------------
