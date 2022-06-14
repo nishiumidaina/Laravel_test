@@ -82,6 +82,8 @@ class HomeController extends Controller
            #popen('start "" ' . $command, 'r');
            exec($command);
            return redirect()->route('home')->with('success', '処理を開始します');
+        }else {
+            return redirect()->route('home')->with('success', '無効な処理です');
         }
     }
     public function stop(Request $request, $id)
