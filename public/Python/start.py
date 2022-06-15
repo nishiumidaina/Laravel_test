@@ -1,8 +1,6 @@
 import subprocess
-import schedule
-import time
 import mysql.connector
-import multiprocessing
+
 
 # コネクション作成
 conn = mysql.connector.connect(
