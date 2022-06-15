@@ -30,6 +30,6 @@ for i in range(len(db_lis)):
         cur.execute(sql,param)
         conn.commit()
         cur.close()        
-        N = subprocess.Popen('python Python/yolov5/main.py --source "%s" --class 0' % (url),shell=True)
+        N = subprocess.Popen('python Python/yolov5_02/main.py --source "%s" --class 0' % (url),shell=True)
         #BDの値を変更
 
