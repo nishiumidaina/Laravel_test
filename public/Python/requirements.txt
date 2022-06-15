@@ -87,8 +87,8 @@ six==1.16.0
 soupsieve==2.3.2.post1
 sqlparse==0.4.2
 stack-data==0.2.0
-tb-nightly==2.10.0a20220527
 tensorboard==2.8.0
+tb-nightly==2.10.0a20220527
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 thop==0.0.31.post2005241907
