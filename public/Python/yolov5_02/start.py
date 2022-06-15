@@ -19,7 +19,6 @@ print(db_lis[0])
 # DB操作終了
 cur.close()
 
-
 #状態判定用のグローバル変数
 for i in range(len(db_lis)):
     url = db_lis[i][3]
