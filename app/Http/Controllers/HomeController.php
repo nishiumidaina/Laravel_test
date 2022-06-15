@@ -78,7 +78,7 @@ class HomeController extends Controller
             return redirect()->route('home')->with('success', '処理中です');
         }else if ($spots[0]["status"]=="None"){
            Spot::where('id', $id)->update(['status'=>'Start']);
-           $command = 'python Python/PPPPP.py > /dev/null &';
+           $command = 'python Python/yolov5/PPPPP.py > /dev/null &';
            #popen('start "" ' . $command, 'r');
            exec($command);
            return redirect()->route('home')->with('success', '処理を開始します');
